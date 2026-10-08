@@ -1,0 +1,286 @@
+/* Layout System & Containers */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+/* Sections Base */
+.section {
+  position: relative;
+  padding-block: clamp(4.5rem, 8vw, 7.5rem);
+  overflow: hidden;
+}
+
+.section-dark {
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+}
+
+.section-cream {
+  background-color: var(--color-cream);
+  color: var(--color-text-dark);
+}
+
+.section-cosmic {
+  background-color: #0b0c10;
+  color: var(--color-text-light);
+}
+
+/* Header & Navigation Bar */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  z-index: 100;
+  transition: background-color var(--transition-smooth),
+              backdrop-filter var(--transition-smooth),
+              border-color var(--transition-smooth),
+              box-shadow var(--transition-smooth),
+              height var(--transition-smooth);
+  border-bottom: 1px solid transparent;
+}
+
+.site-header.is-scrolled {
+  background-color: rgba(17, 17, 17, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: rgba(200, 164, 93, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  height: 72px;
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-cream);
+  text-decoration: none;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  transition: opacity var(--transition-fast);
+}
+
+.brand-logo:hover {
+  opacity: 0.85;
+}
+
+.brand-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+}
+
+.brand-logo-mark svg {
+  width: 18px;
+  height: 18px;
+}
+
+.brand-logo-text {
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+/* Desktop Navigation */
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(244, 239, 230, 0.85);
+  transition: color var(--transition-fast);
+  position: relative;
+  padding-block: 0.35rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--color-gold);
+  transition: width var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-gold);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Language Switcher Button */
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-dark);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+  background-color: rgba(255, 255, 255, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.lang-switch-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  background-color: rgba(200, 164, 93, 0.08);
+}
+
+.lang-switch-btn .lang-active {
+  color: var(--color-gold);
+}
+
+.lang-switch-btn .lang-divider {
+  margin-inline: 0.35rem;
+  opacity: 0.35;
+}
+
+/* Mobile Toggle Hamburger */
+.mobile-nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 120;
+}
+
+@media (min-width: 992px) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
+
+.hamburger-line {
+  width: 24px;
+  height: 1.5px;
+  background-color: var(--color-cream);
+  margin-block: 3px;
+  transition: transform var(--transition-smooth), opacity var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.mobile-nav-toggle.is-active .hamburger-line:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.mobile-nav-toggle.is-active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.is-active .hamburger-line:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* Mobile Nav Drawer */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(6rem, 15vh, 8rem) 2rem 3rem 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-12px);
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.mobile-drawer.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 7vw, 2.75rem);
+  color: var(--color-cream);
+  text-decoration: none;
+  transition: color var(--transition-fast), padding-inline-start var(--transition-fast);
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-gold);
+  padding-inline-start: 0.5rem;
+}
+
+.mobile-drawer-footer {
+  border-top: 1px solid rgba(200, 164, 93, 0.15);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-drawer-info {
+  font-size: 0.875rem;
+  color: var(--color-text-light-muted);
+}

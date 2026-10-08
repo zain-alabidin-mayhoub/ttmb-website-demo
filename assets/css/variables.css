@@ -1,0 +1,69 @@
+:root {
+  /* Brand Palette */
+  --color-dark: #111111;
+  --color-dark-surface: #181818;
+  --color-dark-card: #201D1B;
+  --color-dark-elevated: #282420;
+  
+  --color-cream: #F4EFE6;
+  --color-cream-surface: #EAE3D5;
+  --color-cream-card: #FAF7F2;
+  --color-cream-text: #2A2421;
+  
+  --color-brown: #5B4435;
+  --color-brown-light: #7D614E;
+  --color-brown-dark: #3A2A20;
+  
+  --color-gold: #C8A45D;
+  --color-gold-hover: #DFC07C;
+  --color-gold-dim: rgba(200, 164, 93, 0.2);
+  --color-gold-glow: rgba(200, 164, 93, 0.4);
+  
+  --color-night-blue: #263447;
+  --color-night-blue-deep: #141B26;
+  
+  --color-white: #FFFFFF;
+  --color-text-light: #F4EFE6;
+  --color-text-light-muted: rgba(244, 239, 230, 0.68);
+  --color-text-dark: #1E1B18;
+  --color-text-dark-muted: rgba(30, 27, 24, 0.65);
+  
+  --color-border-dark: rgba(200, 164, 93, 0.16);
+  --color-border-dark-strong: rgba(200, 164, 93, 0.35);
+  --color-border-cream: rgba(91, 68, 53, 0.16);
+  --color-border-cream-strong: rgba(91, 68, 53, 0.32);
+
+  /* Typography */
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing Scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Layout Containers */
+  --container-max: 1320px;
+  --container-wide: 1480px;
+  --container-narrow: 920px;
+  --header-height: 84px;
+
+  /* Shadows & Glows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.25);
+  --shadow-gold: 0 8px 30px rgba(200, 164, 93, 0.18);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}

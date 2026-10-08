@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To The Moon & Back | Specialty Coffee in Dubai — TTMB</title>
+  <meta name="description" content="To The Moon & Back (TTMB) — Dark luxury specialty coffee and artisanal culinary dining in Jumeirah 2, Dubai. Inspired by Melbourne coffee heritage.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23111111' stroke='%23C8A45D' stroke-width='4'/><path d='M64 24A34 34 0 1 1 36 78 36 36 0 0 0 64 24Z' fill='%23C8A45D'/></svg>">
+  
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet (Imports variables, reset, typography, layout, components, sections, rtl) -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="TTMB Home">
+        <span class="brand-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </span>
+        <span class="brand-logo-text" data-i18n="nav.brand">TTMB</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#menu" class="nav-link" data-i18n="nav.menu">MENU</a>
+        <a href="#story" class="nav-link" data-i18n="nav.story">STORY</a>
+        <a href="#find-us" class="nav-link" data-i18n="nav.find_us">FIND US</a>
+        
+        <!-- Language Switcher Pill -->
+        <button type="button" class="lang-switch-btn js-lang-toggle" aria-label="Switch Language">
+          <span class="lang-opt" data-lang="en">EN</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-opt" data-lang="ar">AR</span>
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" id="mobile-toggle" class="mobile-nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <nav class="mobile-nav-list" aria-label="Mobile Navigation">
+      <a href="#hero" class="mobile-nav-link" data-i18n="nav.brand_sub">TO THE MOON & BACK</a>
+      <a href="#menu" class="mobile-nav-link" data-i18n="nav.menu">MENU</a>
+      <a href="#story" class="mobile-nav-link" data-i18n="nav.story">STORY</a>
+      <a href="#find-us" class="mobile-nav-link" data-i18n="nav.find_us">FIND US</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-info">
+        <p>Jumeirah 2 · Dubai, UAE</p>
+        <p>Daily: 7:00 AM – 9:00 PM</p>
+      </div>
+      <button type="button" class="lang-switch-btn js-lang-toggle" style="align-self: flex-start;">
+        <span class="lang-opt" data-lang="en">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-opt" data-lang="ar">AR</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/hero-bg.jpg" alt="To The Moon & Back coffee bar at night in Dubai" class="hero-bg-image" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <div class="hero-location-tag">
+          <span data-i18n="hero.location">JUMEIRAH · DUBAI</span>
+        </div>
+        <h1 class="heading-display hero-title-en" data-i18n="hero.title_en">TO THE MOON & BACK</h1>
+        <div class="hero-title-ar" data-i18n="hero.title_ar">إلى القمر والعودة</div>
+        <p class="hero-subheading" data-i18n="hero.subtitle">Specialty Coffee · Food · Dubai</p>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary" data-i18n="hero.btn_menu">EXPLORE MENU</a>
+          <a href="#find-us" class="btn btn-outline" data-i18n="hero.btn_find">FIND US</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span data-i18n="hero.scroll">SCROLL TO DISCOVER</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. A LITTLE ESCAPE
+         ========================================================================== -->
+    <section id="escape" class="section section-cream">
+      <div class="container">
+        <div class="escape-grid">
+          <div class="escape-text-col reveal">
+            <span class="eyebrow eyebrow-dark" data-i18n="escape.eyebrow">JUMEIRAH 2 · DUBAI</span>
+            <h2 class="heading-xl escape-title" data-i18n="escape.title">A LITTLE ESCAPE<br>IN JUMEIRAH</h2>
+            <p class="text-lead escape-lead" data-i18n="escape.lead">More than coffee.<br>A place to slow down, meet, and enjoy the moment.</p>
+            <a href="#story" class="link-editorial">
+              <span data-i18n="escape.link">OUR STORY</span>
+              <span class="arrow-icon">&rarr;</span>
+            </a>
+          </div>
+          <div class="escape-image-col reveal">
+            <div class="escape-image-frame">
+              <img src="assets/images/escape.jpg" alt="A serene morning sanctuary at TTMB Jumeirah" loading="lazy">
+            </div>
+            <div class="escape-image-badge" data-i18n="escape.badge">
+              A calm sanctuary in the heart of Jumeirah
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SIGNATURE MENU
+         ========================================================================== -->
+    <section id="menu" class="section section-dark menu-section">
+      <div class="container">
+        <div class="section-header-centered reveal">
+          <span class="eyebrow" data-i18n="menu.eyebrow">CURATED SELECTION</span>
+          <h2 class="heading-xl" data-i18n="menu.title">OUR SIGNATURES</h2>
+          <p class="text-lead" data-i18n="menu.lead">Discover a few of the favourites that make TTMB worth the journey.</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="menu-tabs-wrapper reveal">
+          <div class="menu-tabs" role="tablist">
+            <button type="button" class="tab-btn is-active" data-tab="coffee" role="tab" aria-selected="true" data-i18n="menu.tab_coffee">COFFEE</button>
+            <button type="button" class="tab-btn" data-tab="food" role="tab" aria-selected="false" data-i18n="menu.tab_food">FOOD</button>
+            <button type="button" class="tab-btn" data-tab="sweet" role="tab" aria-selected="false" data-i18n="menu.tab_sweet">SWEET</button>
+          </div>
+        </div>
+
+        <!-- Coffee Tab Panel -->
+        <div id="tab-coffee" class="tab-panel is-active menu-grid">
+          <article class="menu-card reveal">
+            <div class="menu-card-image-wrap">
+              <img src="assets/images/menu-flatwhite.jpg" alt="Flat White with silky microfoam" class="menu-card-img" loading="lazy">
+              <span class="menu-badge" data-i18n="item.flatwhite.badge">Signature Pour</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item.flatwhite.title">Flat White</h3>
+              <p class="menu-card-desc" data-i18n="item.flatwhite.desc">Silky microfoam over a rich double ristretto, roasted to honor Melbourne coffee culture.</p>
+              <div class="menu-card-footer">
+                <span data-i18n="item.flatwhite.tag">Single Origin</span>
+                <span>TTMB</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal">
+            <div class="menu-card-image-wrap">
+              <img src="assets/images/gallery-pourover.jpg" alt="Specialty Pour Over V60" class="menu-card-img" loading="lazy">
+              <span class="menu-badge" data-i18n="item.filter.badge">Slow Bar</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item.filter.title">Specialty Pour Over V60</h3>
+              <p class="menu-card-desc" data-i18n="item.filter.desc">Artisanal hand-dripped single origin coffee with distinct floral clarity and bright berry notes.</p>
+              <div class="menu-card-footer">
+                <span data-i18n="item.filter.tag">Ethiopia Yirgacheffe</span>
+                <span>TTMB</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Food Tab Panel -->
+        <div id="tab-food" class="tab-panel menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-image-wrap">
+              <img src="assets/images/menu-smashedavo.jpg" alt="Herby Smashed Avo Toast" class="menu-card-img" loading="lazy">
+              <span class="menu-badge" data-i18n="item.avo.badge">Brunch Favourite</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item.avo.title">Herby Smashed Avo</h3>
+              <p class="menu-card-desc" data-i18n="item.avo.desc">Seeded artisanal sourdough, crushed fresh avocado, soft poached egg, garden mint, and pistachio dukkah.</p>
+              <div class="menu-card-footer">
+                <span data-i18n="item.avo.tag">Artisan Sourdough</span>
+                <span>TTMB Kitchen</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-image-wrap">
+              <img src="assets/images/gallery-toastie.jpg" alt="Truffle Grilled Cheese Toastie" class="menu-card-img" loading="lazy">
+              <span class="menu-badge" data-i18n="item.toastie.badge">Melbourne Toastie</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item.toastie.title">Truffle Grilled Cheese</h3>
+              <p class="menu-card-desc" data-i18n="item.toastie.desc">Toasted brioche layered with melted mature gruyère and sharp cheddar, brushed with black truffle butter.</p>
+              <div class="menu-card-footer">
+                <span data-i18n="item.toastie.tag">House Melt</span>
+                <span>TTMB Kitchen</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-image-wrap">
+              <img src="assets/images/escape.jpg" alt="Cured Pastrami Sando" class="menu-card-img" loading="lazy">
+              <span class="menu-badge" data-i18n="item.pastrami.badge">Artisan Sando</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item.pastrami.title">Cured Pastrami Sando</h3>
+              <p class="menu-card-desc" data-i18n="item.pastrami.desc">Tender spiced pastrami, house dill pickles, wholegrain Dijon mustard, and melted Swiss cheese on sourdough.</p>
+              <div class="menu-card-footer">
+                <span data-i18n="item.pastrami.tag">Slow Cured</span>
+                <span>TTMB Kitchen</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sweet Tab Panel -->
+        <div id="tab-sweet" class="tab-panel menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-image-wrap">
+              <img src="assets/images/menu-cheesecake.jpg" alt="Outer Space Cheesecake" class="menu-card-img" loading="lazy">
+              <span class="menu-badge" data-i18n="item.cheesecake.badge">Celestial Signature</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item.cheesecake.title">Outer Space Cheesecake</h3>
+              <p class="menu-card-desc" data-i18n="item.cheesecake.desc">Caramelized Basque burnt cheesecake topped with a deep galaxy blackberry reduction and edible gold flakes.</p>
+              <div class="menu-card-footer">
+                <span data-i18n="item.cheesecake.tag">House Bake</span>
+                <span>TTMB Bakery</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Full Menu CTA -->
+        <div class="menu-full-cta reveal">
+          <button type="button" class="btn btn-outline js-open-menu-modal">
+            <span data-i18n="menu.btn_full">VIEW FULL MENU</span>
+            <span class="arrow-icon">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. THE TTMB EXPERIENCE
+         ========================================================================== -->
+    <section id="experience" class="experience-section">
+      <div class="container-wide">
+        <div class="experience-hero-wrap reveal">
+          <img src="assets/images/experience.jpg" alt="The welcoming atmosphere and coffee culture at TTMB Jumeirah" class="experience-hero-img" loading="lazy">
+          <div class="experience-floating-card">
+            <span class="eyebrow" data-i18n="exp.eyebrow">ATMOSPHERE & RITUAL</span>
+            <h2 class="heading-lg" data-i18n="exp.title">COFFEE. FOOD. GOOD VIBES.</h2>
+            <p class="text-lead" data-i18n="exp.lead">A hidden corner in Jumeirah, made for slow mornings and good conversations.</p>
+            <div class="experience-features-pills">
+              <span class="feature-pill" data-i18n="exp.pill_1">Melbourne Coffee Culture</span>
+              <span class="feature-pill" data-i18n="exp.pill_2">Quiet Residential Sanctuary</span>
+              <span class="feature-pill" data-i18n="exp.pill_3">Artisanal Scratch Kitchen</span>
+              <span class="feature-pill" data-i18n="exp.pill_4">Cozy Community Space</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. COSMIC BRAND MOMENT
+         ========================================================================== -->
+    <section id="cosmic" class="section section-cosmic cosmic-section cosmic-canvas-wrap">
+      <div class="stars-ambient"></div>
+      <div class="container cosmic-inner reveal">
+        <span class="cosmic-eyebrow" data-i18n="cosmic.eyebrow">THE CELESTIAL IDENTITY</span>
+        <div class="text-xs" style="color: var(--color-gold); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.75rem;" data-i18n="cosmic.sub">TAKE A LITTLE TRIP</div>
+        <h2 class="cosmic-headline" data-i18n="cosmic.headline">TO THE MOON & BACK</h2>
+        <div class="cosmic-arabic-lockup">إلى القمر والعودة</div>
+        <p class="cosmic-body" data-i18n="cosmic.lead">Specialty coffee, good food, and a place worth discovering.</p>
+
+        <!-- Circular Portal to the Iconic Mural -->
+        <div class="cosmic-mural-portal">
+          <div class="cosmic-mural-inner">
+            <img src="assets/images/cosmic-mural.jpg" alt="Iconic Astronaut mural inside TTMB Dubai" loading="lazy">
+          </div>
+        </div>
+        <div class="cosmic-mural-caption" data-i18n="cosmic.mural_caption">The 2-Meter Astronaut Mural · Jumeirah 2, Dubai</div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. OUR STORY
+         ========================================================================== -->
+    <section id="story" class="section section-cream story-section">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content reveal">
+            <span class="eyebrow eyebrow-dark" data-i18n="story.eyebrow">OUR STORY</span>
+            <h2 class="heading-xl story-tagline" data-i18n="story.tagline">From Melbourne<br>to Jumeirah.</h2>
+            <p class="story-paragraph" data-i18n="story.p1">TTMB was born from a deep love for Melbourne's iconic specialty coffee scene—a culture grounded in uncompromising roasting precision, slow rituals, and honest warmth.</p>
+            <p class="story-paragraph" data-i18n="story.p2">Brought to Dubai, TTMB opened its doors in the tranquil, low-rise residential neighborhood of Jumeirah 2. Underneath the gaze of our iconic astronaut mural, guests find a quiet respite to connect, reflect, and savor exceptional coffee.</p>
+            
+            <div class="story-quote-card" data-i18n="story.quote">
+              A cup crafted with intention, in a space that lets you breathe.
+            </div>
+
+            <button type="button" class="btn btn-cream-outline js-open-story-modal">
+              <span data-i18n="story.link">READ OUR STORY</span>
+              <span class="arrow-icon">&rarr;</span>
+            </button>
+          </div>
+
+          <div class="story-visual reveal">
+            <div class="escape-image-frame">
+              <img src="assets/images/cosmic-mural.jpg" alt="The storytelling interior of To The Moon and Back" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. GALLERY
+         ========================================================================== -->
+    <section id="gallery" class="section section-dark gallery-section">
+      <div class="container">
+        <div class="section-header-centered reveal" style="margin-bottom: 3.5rem;">
+          <span class="eyebrow" data-i18n="gallery.eyebrow">VISUAL DIARY</span>
+          <h2 class="heading-xl" data-i18n="gallery.title">OUR LITTLE UNIVERSE</h2>
+        </div>
+
+        <!-- Asymmetrical Editorial Collage -->
+        <div class="gallery-editorial-grid reveal">
+          <div class="gallery-card gallery-item-featured">
+            <img src="assets/images/gallery-pourover.jpg" alt="Specialty pour over dripping into glass carafe" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Pour Over Ritual</span>
+            </div>
+          </div>
+          <div class="gallery-card gallery-item-side-top">
+            <img src="assets/images/gallery-courtyard.jpg" alt="Quiet morning courtyard seating in Jumeirah" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Jumeirah Sanctuary</span>
+            </div>
+          </div>
+          <div class="gallery-card gallery-item-side-bottom">
+            <img src="assets/images/gallery-toastie.jpg" alt="Golden artisan toastie and cold brew" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Melbourne Toastie</span>
+            </div>
+          </div>
+          <div class="gallery-card gallery-item-wide">
+            <img src="assets/images/final-cta.jpg" alt="Atmospheric night ambiance at To The Moon & Back" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Evenings Under The Stars</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Link Bar -->
+        <div class="gallery-footer-bar reveal">
+          <div class="instagram-handle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span data-i18n="gallery.handle">@ttmb.coffee</span>
+          </div>
+          <a href="https://www.instagram.com/ttmb.coffee/" target="_blank" rel="noopener noreferrer" class="link-editorial">
+            <span data-i18n="gallery.follow">FOLLOW ON INSTAGRAM</span>
+            <span class="arrow-icon">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. FIND US
+         ========================================================================== -->
+    <section id="find-us" class="section find-section">
+      <div class="container">
+        <div class="find-grid">
+          <div class="find-info-card reveal">
+            <span class="eyebrow" data-i18n="find.eyebrow">VISIT US</span>
+            <h2 class="heading-xl find-title" data-i18n="find.title">FIND YOUR WAY<br>TO THE MOON</h2>
+            <div class="find-venue-name" data-i18n="find.venue">TTMB — To The Moon & Back</div>
+
+            <div class="find-details-list">
+              <div class="find-detail-item">
+                <div class="find-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="find-detail-title" data-i18n="find.addr_label">LOCATION</div>
+                  <div class="find-detail-text" data-i18n="find.addr_val">La Plage Complex, Al Athar Street, Jumeirah 2, Dubai, United Arab Emirates</div>
+                </div>
+              </div>
+
+              <div class="find-detail-item">
+                <div class="find-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="find-detail-title" data-i18n="find.hours_label">OPENING HOURS</div>
+                  <div class="find-detail-text" data-i18n="find.hours_val">Daily: 7:00 AM – 9:00 PM</div>
+                </div>
+              </div>
+
+              <div class="find-detail-item">
+                <div class="find-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <div class="find-detail-title" data-i18n="find.contact_label">INSTAGRAM</div>
+                  <a href="https://www.instagram.com/ttmb.coffee/" target="_blank" rel="noopener noreferrer" class="find-detail-text" style="display: inline-block; color: inherit; text-decoration: none;" data-i18n="find.contact_val">@ttmb.coffee</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=To+The+Moon+%26+Back+Dubai+Jumeirah" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="find.btn_directions">
+              GET DIRECTIONS
+            </a>
+          </div>
+
+          <div class="find-map-frame reveal">
+            <iframe 
+              title="TTMB Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14439.845778235282!2d55.2285157!3d25.195248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69c5e31fa6b9%3A0xea803f26ca4a59bb!2sTo%20The%20Moon%20%26%20Back!5e0!3m2!1sen!2sae!4v1700000000000" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. FINAL CTA
+         ========================================================================== -->
+    <section id="final-cta" class="final-cta-section">
+      <div class="final-cta-bg">
+        <img src="assets/images/final-cta.jpg" alt="Evening atmosphere at To The Moon & Back" loading="lazy">
+      </div>
+      <div class="final-cta-overlay"></div>
+      <div class="container final-cta-content reveal">
+        <h2 class="heading-xl final-cta-title" data-i18n="cta.title">READY FOR A LITTLE ESCAPE?</h2>
+        <p class="final-cta-lead" data-i18n="cta.lead">Come find us.</p>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary" data-i18n="cta.btn_menu">EXPLORE MENU</a>
+          <a href="#find-us" class="btn btn-outline" data-i18n="cta.btn_find">FIND US</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       10. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title" data-i18n="footer.brand">TO THE MOON & BACK</div>
+          <div class="footer-brand-subtitle" data-i18n="footer.brand_ar">إلى القمر والعودة</div>
+          <p class="footer-location-text" data-i18n="footer.location">Jumeirah 2 · Dubai</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title" data-i18n="footer.nav_title">PAGES</div>
+          <ul class="footer-links-list">
+            <li><a href="#menu" class="footer-link" data-i18n="nav.menu">MENU</a></li>
+            <li><a href="#story" class="footer-link" data-i18n="nav.story">STORY</a></li>
+            <li><a href="#find-us" class="footer-link" data-i18n="nav.find_us">FIND US</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title" data-i18n="footer.social_title">CONNECT</div>
+          <ul class="footer-links-list">
+            <li><a href="https://www.instagram.com/ttmb.coffee/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram: @ttmb.coffee</a></li>
+            <li><a href="#find-us" class="footer-link">Jumeirah 2, Dubai, UAE</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">&copy; 2026 To The Moon & Back. All rights reserved.</span>
+        <span>Specialty Coffee &middot; Dubai</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS: FULL MENU & STORY
+       ========================================================================== -->
+  <!-- Full Menu Modal -->
+  <div id="menu-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-menu-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 id="modal-menu-title" class="heading-md" data-i18n="modal.menu_title">THE FULL MENU</h2>
+          <p class="text-xs text-gold" data-i18n="modal.menu_sub">Carefully roasted beans & wholesome kitchen crafts</p>
+        </div>
+        <button type="button" class="modal-close-btn js-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom: 2.5rem;">
+          <h3 class="heading-sm text-gold" style="margin-bottom: 1rem;">ESPRESSO & SPECIALTY COFFEE</h3>
+          <p class="text-sm text-muted" style="margin-bottom: 0.5rem;">Double Espresso &middot; Long Black &middot; Flat White &middot; Cortado &middot; Batch Brew &middot; Iced Filter</p>
+          <p class="text-xs text-muted">Roasted to preserve terroir, subtle floral notes, and natural sweetness.</p>
+        </div>
+        <div style="margin-bottom: 2.5rem;">
+          <h3 class="heading-sm text-gold" style="margin-bottom: 1rem;">SLOW BAR & POUR OVER</h3>
+          <p class="text-sm text-muted" style="margin-bottom: 0.5rem;">V60 Single Origin &middot; Aeropress &middot; Cold Drip</p>
+          <p class="text-xs text-muted">Carefully sourced rotating single origins.</p>
+        </div>
+        <div style="margin-bottom: 2.5rem;">
+          <h3 class="heading-sm text-gold" style="margin-bottom: 1rem;">BRUNCH & ALL-DAY BITES</h3>
+          <p class="text-sm text-muted" style="margin-bottom: 0.5rem;">Herby Smashed Avo &middot; Truffle Brioche Toastie &middot; Cured Pastrami Sando</p>
+        </div>
+        <div>
+          <h3 class="heading-sm text-gold" style="margin-bottom: 1rem;">HOUSE BAKERY & DESSERTS</h3>
+          <p class="text-sm text-muted" style="margin-bottom: 0.5rem;">Outer Space Cheesecake</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story Modal -->
+  <div id="story-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-story-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 id="modal-story-title" class="heading-md" data-i18n="modal.story_title">THE TTMB NARRATIVE</h2>
+          <p class="text-xs text-gold">From Melbourne to Jumeirah 2</p>
+        </div>
+        <button type="button" class="modal-close-btn js-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="text-body text-muted" style="margin-bottom: 1.5rem;" data-i18n="story.p1">TTMB was born from a deep love for Melbourne's iconic specialty coffee scene—a culture grounded in uncompromising roasting precision, slow rituals, and honest warmth.</p>
+        <p class="text-body text-muted" style="margin-bottom: 1.5rem;" data-i18n="story.p2">Brought to Dubai, TTMB opened its doors in the tranquil, low-rise residential neighborhood of Jumeirah 2. Underneath the gaze of our iconic astronaut mural, guests find a quiet respite to connect, reflect, and savor exceptional coffee.</p>
+        <div class="story-quote-card" data-i18n="story.quote">
+          A cup crafted with intention, in a space that lets you breathe.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Translation Dictionary & Core Application Scripts -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Full Right-to-Left (RTL) & Arabic Styling Architecture */
+
+[dir="rtl"],
+html[lang="ar"],
+body.rtl {
+  font-family: var(--font-arabic), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .heading-display,
+[dir="rtl"] .heading-xl,
+[dir="rtl"] .heading-lg,
+[dir="rtl"] .heading-md,
+[dir="rtl"] .font-serif {
+  font-family: var(--font-arabic), sans-serif;
+  letter-spacing: normal;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+[dir="rtl"] .btn,
+[dir="rtl"] .tab-btn,
+[dir="rtl"] .eyebrow,
+[dir="rtl"] .nav-link,
+[dir="rtl"] .hero-location-tag,
+[dir="rtl"] .gallery-tag,
+[dir="rtl"] .feature-pill,
+[dir="rtl"] .menu-badge {
+  font-family: var(--font-arabic), sans-serif;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+/* Eyebrow marker flipping */
+[dir="rtl"] .eyebrow::before {
+  margin-inline-end: 0;
+  margin-inline-start: 0.75rem;
+}
+
+/* Links & Arrow transitions */
+[dir="rtl"] .link-editorial .arrow-icon,
+[dir="rtl"] .link-editorial svg {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .link-editorial:hover .arrow-icon,
+[dir="rtl"] .link-editorial:hover svg {
+  transform: rotate(180deg) translateX(5px);
+}
+
+/* Quote cards border */
+[dir="rtl"] .story-quote-card {
+  border-inline-start: 4px solid var(--color-brown);
+  border-inline-end: none;
+}
+
+/* Modal close button positioning */
+[dir="rtl"] .modal-header {
+  flex-direction: row-reverse;
+}
+
+/* Mobile drawer align */
+[dir="rtl"] .mobile-drawer {
+  text-align: right;
+}
+
+[dir="rtl"] .mobile-nav-link:hover {
+  padding-inline-start: 0;
+  padding-inline-end: 0.5rem;
+}
+
+/* Navigation link underline */
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+/* Header inner layout */
+[dir="rtl"] .header-inner {
+  flex-direction: row-reverse;
+}
+
+/* Centered components remain centered */
+[dir="rtl"] .hero-content,
+[dir="rtl"] .section-header-centered,
+[dir="rtl"] .cosmic-inner,
+[dir="rtl"] .final-cta-content,
+[dir="rtl"] .menu-tabs-wrapper {
+  text-align: center;
+}
+
+/* Arabic typography balance */
+[dir="rtl"] .text-lead {
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+[dir="rtl"] .text-body,
+[dir="rtl"] .menu-card-desc,
+[dir="rtl"] .story-paragraph {
+  line-height: 1.85;
+}
